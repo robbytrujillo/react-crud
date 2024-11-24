@@ -1,4 +1,17 @@
+// import useState
+import { useState } from 'react';
+
+// import useNavigate
+import { useNavigate } from 'react-router-dom';
+
+// import API
+import api from '../../api';
+
 export default function PostCreate() {
+
+    // define state
+    const [image, setImage] = useState("");
+    const [title, setTitle] = useState("");
     return (
         <div className="container mt-5 mb-5">
             <div className="row">
